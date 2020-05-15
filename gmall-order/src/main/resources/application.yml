@@ -1,0 +1,29 @@
+server:
+  port: 8092
+spring:
+  rabbitmq:
+    host: 192.168.1.130
+    username: huage
+    password: huage
+    virtual-host: /huage
+  redis:
+    host: 192.168.1.130
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+gmall:
+  jwt:
+    pubKeyPath: D:\\temp\\rsa\\rsa.pub
+    cookieName: GMALL_TOKEN
+
+alipay:
+  app_id: 2016102200740532
+  merchant_private_key: MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQC0f4vsuhWL09RnfxmIaSSLlo4xtBzi3wgp7OH1pnYQVJcxjJkvG1+084xq6HNbB1ov9+KOK+/wuqsesMNJUrUE1h1OQJyfOfUIHcT6xZ/FRFuiL1dtSRwGMn9oxubK2SVrpSMJ6VWrl6eFOl3WBb3UoXxQGFoZ4XOXeDEH9T3lEViMeTk0XeAujY+OHSTSmmO8DjvFdF5CiLZcSmlVUNh3G79UjdehqSGmHVYJ1ZWo9RKEy1enoSHTYV0zQYB+R5gEQJJ2WlyS2O648e1kEFwYadOOiRcUMyqCAqiEWwOarYqRTsrb1WNaB4ug04gK2FmUIhndNszkM+FyXchou9Z5AgMBAAECggEATZp8/YWwF9M2glz6DFUwWjeb4TDQLpa3utbW+7fbEQBdlPcfMUqypmkEGT7hweRyWSdZp8iqO7T2N5bGD7NYksDADtHmxOq1OA0ckLkBDV5ri1qRWzJQszVo5BKITfR4i0SPwQYqSEFGzBghGhCT4mSfvwwJSRFOknQhmItPVjmad5Iny4tAHvEv7pO6VrQ0KvvkHWMz0hS4g1KjEStv9eLDoylY1WaEB0ySDDF4WRUvcAXtcTilQwmnVZzk82vO9IzSRd4ysqzNPXI1QOwB3aJTRyF+EfTpvlAUJ3279Sow1pwhRN1GKs8n16jXZmirOS9/nrMZUY3H74Tgp9fMtQKBgQDp/sQJQdQKp01o46nz9jeGPGdFgwFeIFr2g+RarzbB+zmxdKXUR0SNp3jqV7TrEyJPTo4fQuCp2bcSEv8hZlp8agKz+YTb3T9/nKRxqGfd57I4SOKsrm4YRebAMnOKXOlyS0U+887Lr+XOBQQYfZXzXTaWHCgqrIlUaInLaBmgDwKBgQDFeOMspJ8UMFGGBP1DSD5Q08qxq9Gv2iUA+nMQYsrhQjFtxZ9Pw4kLCJqBXd+uts7ASyaFSo7JAH+LDHNyH+Mg7F3qPOeYhf8L0qJMajtzm+oWAL+P7zbZyPZDKPBkM0oF5UTLLWNWDtc+S9fgJSrDKOUFNeX1Qum+pF9yre8Y9wKBgQCeMQAzCe/iK+znZlJ1fhVXiOqAUerQyar1UYFF1YJ9bew5DhU2B+BOq9PRCe5jphHh78ehVsMv0OI1M+aLm/i8d6bQKXYqdc8B5NI/jIx7trID3zJvb5U6j7dKZFE8T0f7Xuu3fXhmt8nyl+2G6RBA8NmAbhSxlOdayzms6/m2/QKBgQCcGtR7lierbgcESy1q4tFgVA0IJyu8OFbITzRm37JCIHGytWcbRxgvAL4jRnJtS1Zl7QKmnCoD+8DXyx/4N/z1KeWUJlFu4X6degWTIuecnMSQYEcPIavavmLu9I4Up/b8ciHP/DFq9pBxTsN5DeigHtPtKo5/NEZTzt0laxp4QQKBgQDY56qyVo/HPvxtt8A5q5bVWZzOo0bQqWlk0dqogrUv4gvHH1W+gmfigh4GtYnqu5jar1yS2pcvHE/MKQ9t6dylexCfPnF9TFUDQlnt+QqvT4mg4eafTZRYp9oyz2gtT5A1tXxukeoiEXGTajzGaDYtXJlUt6x0WqOxC1PlJgCe8A==
+  alipay_public_key: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4urdbUOhxCzUV+Kav4hEMwkJGbc9lRXV7KTYcobXZ1UCwH+iCjptlV0284g/Gh4Jebiu+8BEdZvXGBXYyzpVDWtmdy5/rIWZ7geMqzQ8nVLkpFmX+aASZ0oM69AldFIhyrZqMDQXfIKRI7B7BVYp3h0TyVBZYHxOGgSrPNVsuQfl1rJ93UWRCAjYQ+V6ufLX8/wY8wV9+o8CxLXvA82BZwmbeHGXi7rurb+9rwB1SS01ytOUuL1ZhunEPeUVzSYVXJvehckFUc9qeu0YusDZ75G1uTsCzUJzcbFnKPRWqsGINeu2GeRzvkozu1PvmKT6WvDsXNdEECvQAUKFrVMHyQIDAQAB
+  notify_url: http://gahoy992hq.52http.net
+  #return_url: http://localhost:2000/pay/success.html
+  return_url: http://www.baidu.com
+  sign_type: RSA2
+  #charset: utf-8
+  gatewayUrl: https://openapi.alipaydev.com/gateway.do

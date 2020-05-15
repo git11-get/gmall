@@ -1,6 +1,10 @@
 package com.atguigu.gmall.sms.service.impl;
 
+import com.atguigu.gmall.sms.entity.SkuBoundsEntity;
+import com.atguigu.gmall.sms.vo.SkuSaleVo;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 import java.util.Map;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
@@ -26,5 +30,6 @@ public class SpuBoundsServiceImpl extends ServiceImpl<SpuBoundsDao, SpuBoundsEnt
 
         return new PageVo(page);
     }
+
 
 }
